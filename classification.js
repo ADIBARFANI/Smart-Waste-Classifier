@@ -203,7 +203,7 @@ async function classifyWithWorker(imageDataUrl) {
 
   if (!response.ok) {
     const err = await response.json().catch(() => ({}));
-    throw new Error(err.error || \`Worker error \${response.status}\`);
+    throw new Error(err.error || 'Worker error ' + response.status);
   }
 
   const result = await response.json();
