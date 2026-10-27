@@ -3,7 +3,7 @@
  * Uses Cloudflare Worker proxy (real AI) + mock fallback
  */
 
-const WORKER_URL = 'https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev'; // ← Ganti dengan URL Worker-mu
+const WORKER_URL = 'https://smart-waste-ai.fm6506709.workers.dev/'; // ← Ganti dengan URL Worker-mu
 
 /* =====================================================
    MOCK DATABASE (fallback)
