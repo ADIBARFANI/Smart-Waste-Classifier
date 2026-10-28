@@ -135,8 +135,23 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: var(--space-8) var(--space-6) var(--space-10);
-  max-width: 480px;
-  margin: 0 auto;
+  
+}
+
+@media (min-width: 768px) {
+  .onboarding {
+    /* arah layout */
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    padding: var(--space-10);
+  }
+
+  .onboarding-slides {
+    max-width: 600px; 
+    width: 50%;
+  }
 }
 
 .onboarding-slides {
