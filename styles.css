@@ -140,19 +140,32 @@ ul {
 
 @media (min-width: 768px) {
   .onboarding {
-    /* arah layout */
     flex-direction: row; 
     align-items: center;
     justify-content: center;
-    gap: var(--space-8);
+    gap: var(--space-10);
     padding: var(--space-10);
+    max-width: 100%;
   }
 
   .onboarding-slides {
-    max-width: 600px; 
+    max-width: 500px; 
     width: 50%;
+    height: 350px; 
   }
-}
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .onboarding-actions {
+    width: 320px;
+    flex-shrink: 0;
+  }
+   }
+
 
 .onboarding-slides {
   flex: 1;
