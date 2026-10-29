@@ -309,13 +309,19 @@ ul {
    App Layout
    ===================================================== */
 .app {
-  max-width: 480px;
-  margin: 0 auto;
+  width: 100%;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .app-header {
@@ -481,6 +487,12 @@ ul {
   padding: 0;
   max-width: 480px;
   margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  #screen-camera {
+    max-width: 1200px; 
+  }
 }
 
 .camera-container {
@@ -1061,6 +1073,12 @@ ul {
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.04);
 }
 
+@media (min-width: 1024px) {
+  .bottom-nav {
+    max-width: 1200px;
+  }
+}
+
 .nav-item {
   display: flex;
   flex-direction: column;
@@ -1120,6 +1138,17 @@ ul {
   overflow-y: auto;
   animation: slideUp var(--duration) var(--ease);
 }
+
+@media (min-width: 1024px) {
+  .modal-content {
+    max-width: 600px;         
+    border-radius: var(--radius-xl); 
+  }
+  .modal {
+    align-items: center;      
+  }
+}
+
 
 @keyframes slideUp {
   from { transform: translateY(100%); }
