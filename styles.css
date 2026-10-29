@@ -140,18 +140,21 @@ ul {
 
 @media (min-width: 768px) {
   .onboarding {
-    flex-direction: row; 
-    align-items: center;
+    flex-direction: column;   
+    align-items: center;      
     justify-content: center;
-    gap: var(--space-10);
+    gap: var(--space-8);
     padding: var(--space-10);
-    max-width: 100%;
+    max-width: 480px;        
+    margin: 0 auto;           
+    height: 100vh;            
   }
 
   .onboarding-slides {
-    max-width: 500px; 
-    width: 50%;
-    height: 350px; 
+    max-width: 100%; 
+    width: 100%;
+    height: auto; 
+    min-height: 300px;
   }
 
   .slide {
@@ -161,11 +164,10 @@ ul {
   }
   
   .onboarding-actions {
-    width: 320px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 320px;         
   }
-   }
-
+}
 
 .onboarding-slides {
   flex: 1;
